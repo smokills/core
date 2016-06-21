@@ -33,9 +33,8 @@
         "optimize-autoloader": true
     },
     "autoload": {
-        "classmap": [ "classes/" ]
-    },
-    "autoload-dev": {
-        "classmap": [ "classes/", "tests/" ]
+        "psr-4" : {
+            "Core\\": "src"
+        }
     }
 }
