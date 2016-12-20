@@ -194,6 +194,22 @@ class CLI {
        static::write($message . PHP_EOL);
    }
 
+   public static function successln($message) {
+       static::writeln("<green>{$message}</green>");
+   }
+
+   public static function errorln($message) {
+       static::writeln("<red>{$message}</red>");
+   }
+
+   public static function infoln($message) {
+       static::writeln("<cyan>{$message}</cyan>");
+   }
+
+   public static function warningln($message) {
+       static::writeln("<yellow>{$message}</yellow>");
+   }
+
    /**
     * Set output ANSI color
     * @param string $color The color name constant.
